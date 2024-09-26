@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo ETG</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="images/camera.svg" type="image/x-icon">
+</head>
+<body data-bs-theme=white>
+    <header>
+        <!-- barra de navegação principal -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary m-0 p-0 border">
+                <div class="container-fluid  d-flex justify-content-center">
+                  <a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
+                    <div id="logoprincipal">
+                      <img class src="images/explore 1.png"  alt="">
+                    </div>  
+                    <div class="nomelogo" id="logoNome">
+                      <a href="/index.html"><h2>TURISMO DF</h2></a>
+                    </div>
+                  </a>
+                </div>
+                  <!-- para celular/tablet HAMBURGUINHO -->
+                  <div class="collapse navbar-collapse justify-content-center align-items-end" id="navbarSupportedContent">
+                  </div>
+      </nav>
+        <!-- fim barra de navegação -->
+      <nav class="navbar navbar-expand-lg d-flex justify-content-center">
+                <div class="container m-1">
+                    <!-- menu hamburguinho -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse p-0 m-0" id="navbarSupportedContent">
+                    <!-- menu principal -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/sobre.html">Sobre</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/destaques.html">Pontos Turísticos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/cadastre.html">Cadastre</a>
+                      </li>
+                    </ul>
+                    <!-- botao procurar -->
+                    <div id="procurar">
+                      <form class="d-flex gap-2" role="search">
+                        <div class="buscarInput">
+                          <input class="form-control" type="search" placeholder="" aria-label="Search">
+                        </div>
+                        <div class="botaoBuscar">
+                          <button class="btn btn-outline-dark" type="submit">Procure</button>
+                        </div>
+                        
+                      </form>
+                    </div>
+                    
+                  </div>
+                </div>
+      </nav>
+    </header>
+
+    <main>
+        <!-- carousel -->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+              <div class="carousel-item active" data-bs-interval="8000">
+                <img src="images/banner/banner1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/banner/banner2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/banner/banner3.PNG" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- fim carousel -->
+          <section class="informacaoAdicional">
+              <div id="informacao">
+                  <h2>O que fazer em Brasília – 32 pontos turísticos da capital!</h2>
+                    <p>Saiba onde ir e o que fazer em Brasília, conheça seus principais pontos turísticos.</p>
+              </div>
+
+          </section>
+          
+          <section class="container" id="locais">
+            <div class="row" id="items">
+                <!-- item1 -->
+                <div id="turismo1" class="card" style="width: 18rem;">
+                    <img src="images/pontão.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Pontão do Lago Sul</h5>
+                      <p class="card-text"></p>
+                      <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#pontao">
+                            Saiba mais...
+                        </button>
+                    </div>
+                </div>
+                <!-- item2 -->
+                <div id="turismo2" class="card" style="width: 18rem;">
+                    <img src="images/ponte_JK.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Ponte JK</h5>
+                      <p class="card-text"></p>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ponteJK">
+                        Saiba mais...
+                    </button>
+                    </div>
+                  </div>
+                <!-- item3 -->
+                <div id="turismo3" class="card" style="width: 18rem;">
+                    <img src="images/Congresso_nacional.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Congresso Nacional</h5>
+                      <p class="card-text"></p>
+                      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#congresso">
+                        Saiba mais...
+                    </button>
+                    </div>
+                  </div>
+          </div>
+          </section>
+    </main>
+    
+
+
+    <footer class="d-flex justify-content-center align-items-center flex-column w-100 ">
+      <div id="infoFooter">
+        <p>Siga nossas redes sociais: <a href="#">@turismo_DF</a></p>
+      </div>
+      <div id="autorais">
+        <p>&copy; Todos os direitos reservados ao @turismo_DF etg.</p>
+      </div>
+      
+    </footer>
+
+    <!-- MODAL -->
+    
+  
+  <!-- Modal item1-->
+  <div class="modal fade" id="pontao" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Pontão do Lago Sul</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body m-2">
+            Para quem vive ou visita Brasília, o Pontão do Lago Sul é local obrigatório. Atrativos não faltam ao maior centro de lazer e entretenimento da capital federal: cenário de cartão-postal, gastronomia variada, programação cultural e esportiva, amplo estacionamento e inúmeros serviços, além do seu clima quase praiano e do pôr-do-sol mais belo da cidade. 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+          <button type="button" class="btn btn-primary">Como Chegar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal item2-->
+  <div class="modal fade " id="ponteJK" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Ponte JK</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body m-2">
+            Ponte JK, em Brasília, está na lista de pontes mais bonitas do mundo! Monumento é o único representante brasileiro em publicação da revista norte-americana de viagens Condé Nast Traveler. Ponte JK foi construída em 2002.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+          <button type="button" class="btn btn-dark">Como Chegar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal item3-->
+  <div class="modal fade" id="congresso" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Congresso Nacional</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body m-2">
+            Palácio do Congresso Nacional é um ponto turístico de Brasília, no Brasil, É possível visitar o Palácio do Congresso Nacional em dias úteis (exceto terças e quartas-feiras), aos finais de semana e feriados, das 9h às 17h. A duração do percurso é de cerca de 50 minutos. Nas segundas, quintas e sextas, as visitas são realizadas em inglês, francês, espanhol e libras.
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+          <button type="button" class="btn btn-dark">Como Chegar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- JAVASCRIPT -->
+<script src="script/bootstrap.bundle.min.js"></script>
+
+<!-- BOTAO BUSCAR -->
+
+
+</body>
+</html>

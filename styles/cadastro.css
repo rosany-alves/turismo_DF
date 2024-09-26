@@ -1,0 +1,64 @@
+
+.tabelaform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+   
+}
+
+.parteUmform {
+    background-color: rgb(168, 168, 168);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 15%;
+    height: 50vh;
+    border: 1px black;
+}
+.boasvindas img{
+    height: 200px;
+    width: 200px;
+}
+
+.parteDoisform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../images/brasilia\ 1.png);
+    width: 30%;
+    height: 70vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+.parteDois {
+    gap: 30px;
+}
+
+.parteDois h2{
+    display: flex;
+    position: relative;
+    
+}
+
+.form-check-label {
+    color:white ;
+}
+
+
+.form-check {
+    display: flex;
+
+}
+
+.formularioCadastro label {
+    text-transform: uppercase;
+    
+}
